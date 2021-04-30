@@ -12,7 +12,7 @@ const tutorials = [
 ];
 function titleCased(){
 
- return  newArray=tutorials.map(function(Word) {
+const newArray=tutorials.map(function(Word) {
    const separateWord=Word.toLowerCase().split(' ');
    for (let i = 0; i < separateWord.length; i++) {
       separateWord[i] = separateWord[i].charAt(0).toUpperCase() +
@@ -20,4 +20,5 @@ function titleCased(){
    }
    return separateWord.join(' ');
 });
+return newArray;
 }
