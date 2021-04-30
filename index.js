@@ -13,7 +13,7 @@ const tutorials = [
 function titleCased(){
 
 const newArray=tutorials.map(function(Word) {
-   const separateWord=Word.toLowerCase().split(' ');
+   const separateWord=Word.split(' ');
    for (let i = 0; i < separateWord.length; i++) {
       separateWord[i] = separateWord[i].charAt(0).toUpperCase() +
       separateWord[i].substring(1);
